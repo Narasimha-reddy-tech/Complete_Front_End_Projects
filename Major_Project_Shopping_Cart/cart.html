@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css">
+    <script src="./cart.js"></script>
+</head>
+
+<body>
+    <div id="app-container">
+        <!-- product list -->
+        <div id="product-list">
+            <h2>Our Products</h2>
+            <div class="products-container">
+                <div class="product" id="product1">
+                    <img src="./biryani cart1.jpeg">
+                    <div class="product-details">
+                        <h3>product 1</h3>
+                        <p class="price">$10</p>
+                        <button onclick="addToCart('product1','product 1',10)">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product" id="product2">
+                    <img src="./shopping cart2.jpeg">
+                    <div class="product-details">
+                        <h3>product 2</h3>
+                        <p class="price">$25</p>
+                        <button onclick="addToCart('product2','product 2',25)">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product" id="product3">
+                    <img src="./shoes cart3.jpeg">
+                    <div class="product-details">
+                        <h3>product 3</h3>
+                        <p class="price">$20</p>
+                        <button onclick="addToCart('product3','product 3',20)">Add to cart</button>
+                    </div>
+                </div>
+                <div class="product" id="product4">
+                    <img src="./furniture cart4.jpeg">
+                    <div class="product-details">
+                        <h3>product 4</h3>
+                        <p class="price">$40</p>
+                        <button onclick="addToCart('product4','product 4',40)">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Shopping cart -->
+        <div id="cart">
+            <h2>shopping cart</h2>
+            <ul id="cart-items"></ul>
+            <p class="total">Total: $ <span id="total-amount">0</span></p>
+            <button onclick="checkOut()">Checkout</button>
+
+        </div>
+
+
+    </div>
+    <!-- Receipt model -->
+    <div id="receipt-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeReceipt()">&times;</span>
+            <h2>Order Receipt</h2>
+            <div id="receipt-content"></div>
+            <p class="total">Total: $ <span id="receipt-total"></span></p>
+            <button onclick="confirmCheckOut()">Confirm checkout</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
