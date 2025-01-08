@@ -1,0 +1,49 @@
+.container {
+    height: 600px;
+    width: 900px;
+    border: 2px solid red;
+    display: flex;
+    position: relative;
+    left: 300px;
+    top: 60px;
+
+}
+
+.content {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2rem;
+}
+
+.head {
+    color: darkgreen;
+    position: relative;
+    top: 40px;
+}
+
+h3 {
+    text-decoration: line-through;
+    position: relative;
+    left: 130px;
+    bottom: 10px;
+
+}
+
+.btn {
+    padding: 14px 100px;
+    background-color: darkgreen;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+}
+
+i {
+    height: 20px;
+    width: 20px;
+}
+
+.btn a {
+    height: 20px;
+    width: 20px;
+    color: white;
+}
